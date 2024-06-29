@@ -1,0 +1,78 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.outfit-400 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-700 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Root */
+:root {
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  /* Typography */
+  --Font-size: 15px;
+}
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-gray);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  width: 20%;
+  background-color: var(--White);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 100px;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.text {
+  margin: 20px 0px;
+  font-size: var(--Font-size);
+}
+
+h1 {
+  color: var(--Dark-blue);
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--Grayish-blue);
+}
+
+/* Media */
+@media (max-width: 575px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+    margin: 100px 10px;
+  }
+}
